@@ -162,7 +162,7 @@ body {
     border-radius: 9999px;
     font-weight: 600;
     transition: all 0.3s ease;
-    border: 2px solid transparent;
+    border: 2px solid inherit;
     cursor: pointer;
     font-size: 0.9rem;
     line-height: 1;
@@ -171,10 +171,12 @@ body {
 .btn-primary {
     background: #244855;
     color: white;
+    border: 2px solid #244855;
 }
 
 .btn-primary:hover {
     background: #E64833;
+    border-color: #E64833;
     transform: translateY(-2px);
 }
 
