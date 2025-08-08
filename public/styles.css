@@ -527,10 +527,11 @@ blockquote {
     text-align: left;
 }
 
-.contact-item i {
-    font-size: 1.5rem;
+.contact-item>svg {
+    width: 46px;
+    height: 46px;
+    stroke-width: 1;
     color: #E64833;
-    min-width: 30px;
 }
 
 .contact-item h3 {
