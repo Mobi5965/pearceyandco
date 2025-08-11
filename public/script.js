@@ -137,11 +137,23 @@ function initializeModal() {
 }
 
 // Calendly Modal Functions
+let calendlyLoaded = false;
+
 function openCalendlyModal() {
     const modal = document.getElementById('calendlyModal');
-    if (modal) {
-        modal.style.display = 'block';
-        document.body.style.overflow = 'hidden'; // Prevent background scrolling
+    if (!modal) return;
+
+    modal.style.display = 'block';
+    document.body.style.overflow = 'hidden';
+
+    if (!calendlyLoaded) {
+        Calendly.initInlineWidget({
+            url: 'https://calendly.com/kevinpearcey',
+            parentElement: modal.querySelector('.calendly-inline-widget'),
+            prefill: {},
+            utm: {}
+        });
+        calendlyLoaded = true; // Mark as loaded so it doesn't run again
     }
 }
 

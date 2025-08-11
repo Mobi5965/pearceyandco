@@ -613,27 +613,36 @@ blockquote {
 }
 
 .modal-content {
-    background-color: white;
-    margin: 5% auto;
+    display: flex;
+    flex-direction: column;
+    background-color: #fff;
+    margin: 3% auto;
     padding: 0;
     border-radius: 12px;
     width: 90%;
-    max-width: 600px;
+    max-width: 1100px;
+    height: min(90vh, 800px);
+    max-height: 90vh;
     box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
     animation: modalSlideIn 0.3s ease-out;
+    -webkit-border-radius: 12px;
+    -moz-border-radius: 12px;
+    -webkit-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    -moz-box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+    height: 90vh;
 }
 
 .modal-header {
     background: #244855;
     color: white;
-    padding: 2rem;
+    padding: 1.5rem 2rem;
     border-radius: 12px 12px 0 0;
     position: relative;
 }
 
 .modal-header h2 {
-    margin-bottom: 0.5rem;
-    font-size: 1.8rem;
+    /* margin-bottom: 0.5rem;
+    font-size: 1.8rem; */
 }
 
 .modal-subtitle {
@@ -657,6 +666,7 @@ blockquote {
 
 .modal-body {
     padding: 2rem;
+    height: 100%;
 }
 
 .calendly-placeholder {
