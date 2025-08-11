@@ -665,7 +665,7 @@ blockquote {
 }
 
 .modal-body {
-    padding: 2rem;
+    padding: 0;
     height: 100%;
 }
 
