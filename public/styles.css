@@ -22,6 +22,38 @@ body {
     padding: 0 20px;
 }
 
+.text-center {
+    text-align: center;
+}
+
+/* Page Loader */
+.loader {
+    position: fixed;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    width: 100%;
+    z-index: 9999;
+    background: #000;
+    display: none;
+}
+
+.loader .spinner {
+    width: 8rem;
+    height: 8rem;
+    border-bottom-width: 2px;
+    border-bottom-style: solid;
+    border-color: rgb(37 99 235);
+    border-radius: 9999px;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
 /* Navigation */
 .navbar {
     position: fixed;
@@ -638,11 +670,6 @@ blockquote {
     padding: 1.5rem 2rem;
     border-radius: 12px 12px 0 0;
     position: relative;
-}
-
-.modal-header h2 {
-    /* margin-bottom: 0.5rem;
-    font-size: 1.8rem; */
 }
 
 .modal-subtitle {

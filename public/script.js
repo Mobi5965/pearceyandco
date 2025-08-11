@@ -1,3 +1,31 @@
+// Function to show the loader
+function showLoader() {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.style.display = 'flex'; // Show the loader
+    }
+}
+
+// Function to hide the loader
+function hideLoader() {
+    const loader = document.getElementById('loader');
+    if (loader) {
+        loader.remove(); // Remove the loader element
+    }
+}
+
+// Example of using the loader during a simulated loading process
+document.addEventListener('DOMContentLoaded', () => {
+    // showLoader(); // Show loader when the content starts loading
+    // its already set to show in css, so no need to call it here
+
+    // Simulate a loading process (e.g., fetching data)
+    setTimeout(() => {
+        hideLoader(); // Hide loader after loading is complete
+    }, 3000); // Adjust the timeout as needed
+});
+
+
 // Component Loading System
 async function loadComponent(componentId, componentPath) {
     try {
