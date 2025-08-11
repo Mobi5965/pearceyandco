@@ -12,6 +12,7 @@ function hideLoader() {
     if (loader) {
         loader.remove(); // Remove the loader element
     }
+    document.body.style.background = '#fff'; 
 }
 
 // Example of using the loader during a simulated loading process
@@ -22,7 +23,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // Simulate a loading process (e.g., fetching data)
     setTimeout(() => {
         hideLoader(); // Hide loader after loading is complete
-    }, 3000); // Adjust the timeout as needed
+    }, 1000); // Adjust the timeout as needed
 });
 
 
