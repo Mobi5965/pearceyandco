@@ -36,7 +36,6 @@ body {
     width: 100%;
     z-index: 9999;
     background: #000;
-    display: none;
 }
 
 .loader .spinner {
